@@ -1,3 +1,9 @@
+h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+}
+
 .navGlobal{
     width: 100%;
     display:flex;
@@ -241,4 +247,292 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 35px;
+}
+
+.shop__info{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 100px;
+    margin-bottom: 40px;
+}
+
+.shop__info h1{ 
+    font-size: 50px;
+    line-height: 56px;
+}
+
+.shop__info p{
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.shop__item{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 130px;
+}
+
+.shop__item h1{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin-left:80px; 
+}
+
+.shop__itemRect{
+    width: 400px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+}
+
+.shop__itemStar{
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.shop__itemVR{
+    width: 200px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -70px;
+}
+
+.shop__item p{
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 125px;
+    
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.shop__itemPrice{
+    z-index: 2;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 130px;
+    font-size: 25px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+
+.shop__item2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 550px;
+}
+
+.shop__item2 h1{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin-left:80px; 
+}
+
+.shop__itemRect2{
+    width: 400px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+}
+
+.shop__itemStar2{
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.shop__itemVR2{
+    width: 200px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -70px;
+}
+
+.shop__item2 p{
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 125px;
+    
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.shop__itemPrice2{
+    z-index: 2;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 130px;
+    font-size: 25px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+
+.shop__item3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+}
+
+.shop__item3 h1{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin-left:80px; 
+}
+
+.shop__itemRect3{
+    width: 400px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+}
+
+.shop__itemStar3{
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.shop__itemVR3{
+    width: 200px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -70px;
+}
+
+.shop__item3 p{
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 125px;
+    
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.shop__itemPrice3{
+    z-index: 2;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 130px;
+    font-size: 25px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+
+.shop__item4{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    margin-left: -680px;
+}
+
+.shop__item4 h1{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin-left:80px; 
+}
+
+.shop__itemRect4{
+    width: 400px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+}
+
+.shop__itemStar4{
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.shop__itemVR4{
+    width: 200px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -70px;
+}
+
+.shop__item4 p{
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 125px;
+    
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.shop__itemPrice4{
+    z-index: 2;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 130px;
+    font-size: 25px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
 }
