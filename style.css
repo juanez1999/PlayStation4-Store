@@ -1,3 +1,4 @@
+
 h1{
     font-family: Raleway;
     font-style: normal;
@@ -8,6 +9,7 @@ h1{
     width: 100%;
     display:flex;
     height: 100%;
+    align-items: center;
 }
 
 .navGlobal__logo{
@@ -55,10 +57,17 @@ h1{
 }
 
 .navGlobal__searcher{
-    width: 20px;
     flex-direction: row;
+    border: none;
     border-bottom: 2px solid #404040;
     padding: 20px;
+    margin-top: -10px;
+    outline: none;
+}
+
+.navGlobal__searcherLogo{
+    position: absolute;
+    margin-top: 10px;
 }
 
 .navGlobal__shop{
@@ -68,9 +77,9 @@ h1{
     margin-left: 130px;
 }
 
-.navGlobal__shoping{
-    margin: 0px 50px;
-    width: 20px;
+.navGlobal__shopping{
+    margin: 0px 40px;
+    width: 100px;
     height: auto;
 }
 
@@ -204,19 +213,12 @@ h1{
     margin: 0%;
     padding: 0%;
     margin-top:40px;
+    background: rgba(5, 41, 111, 0.91);
+    align-items: center;
 }
 
-.banner__accessoriesBlue{
-    width: 100%;
-    margin: 0%;
-    padding: 0;
-    position: absolute;
-    z-index: -1;
-}
 
 .banner__accessoriesControl{
-    position: absolute;
-    z-index: 2;
     width: 700px;
     height: auto;
     margin-top: 100px;
@@ -224,13 +226,9 @@ h1{
 
 .banner__accessoriesInfo{
     width: 500px;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
     color: white;
     justify-content: center;
-    margin: 60px 0px;
-    margin-left: 750px;
+    margin: 60px 50px;
     
 }
 
@@ -274,7 +272,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
+    height: 600px;
 }
 
 .shop__item{
@@ -542,6 +540,9 @@ h1{
 .banner__offer{
     display: flex;
     flex-direction: column;
+    background-image: url("recursos/bannerOfertas.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .banner__offerRed{
@@ -551,25 +552,23 @@ h1{
 }
 
 .banner__offer h1{
-    margin-top: 380px;
+    margin-top: 50px;
     margin-left: 300px;
     color: white;
-    position: absolute;
     font-size: 70px;
     font-weight: bold;
 }
 
 .banner__offerProducts{
-    margin-top: 400px;
+    margin-top: -100px;
     margin-left: 300px;
     padding: 0;
-    position: absolute;
     width: 800px;
 }
 
 .banner__offer h2{
     width: 600px;
-    margin-top: 700px;
+    margin-top: 400px;
     margin-left: 400px;
     color: white;
     position: absolute;
