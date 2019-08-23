@@ -168,6 +168,7 @@ h1{
     width: 180px;
     height: 50px;
     color: white;
+    font-size: 15px;
 }
 .change__salient{
     display: flex;
@@ -273,7 +274,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    
 }
 
 .shop__item{
@@ -535,4 +536,63 @@ h1{
     font-style: normal;
     font-weight: bold;
     color: white;
+}
+
+
+.banner__offer{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__offerRed{
+    margin-top: 300px;
+    padding: 0;
+    position: absolute;
+}
+
+.banner__offer h1{
+    margin-top: 380px;
+    margin-left: 300px;
+    color: white;
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.banner__offerProducts{
+    margin-top: 400px;
+    margin-left: 300px;
+    padding: 0;
+    position: absolute;
+    width: 800px;
+}
+
+.banner__offer h2{
+    width: 600px;
+    margin-top: 700px;
+    margin-left: 400px;
+    color: white;
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.banner__offer button{
+    position: absolute;
+    border: none;   
+    border-radius: 15px;    
+    background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #F0A157 0.01%, #FAA04D 38.54%, #FF8A00 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 220px;
+    height: 60px;
+    color: white;
+    font-size: 21px;
+    margin-top: 900px;
+    margin-left: 600px;
 }
