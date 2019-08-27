@@ -567,11 +567,10 @@ h1{
 }
 
 .banner__offer h2{
+    display: flex;
     width: 600px;
-    margin-top: 400px;
     margin-left: 400px;
     color: white;
-    position: absolute;
     font-size: 70px;
     font-weight: bold;
     
@@ -583,7 +582,6 @@ h1{
 }
 
 .banner__offer button{
-    position: absolute;
     border: none;   
     border-radius: 15px;    
     background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #F0A157 0.01%, #FAA04D 38.54%, #FF8A00 100%);
@@ -592,6 +590,6 @@ h1{
     height: 60px;
     color: white;
     font-size: 21px;
-    margin-top: 900px;
     margin-left: 600px;
+    margin-bottom: 50px;
 }
