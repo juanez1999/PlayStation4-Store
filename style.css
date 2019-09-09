@@ -724,7 +724,8 @@ button{
     display: flex;
     position: absolute;
     z-index: 1;
-    margin-left: 90%;
+    width: 100%;
+    justify-content: center;
 }
 
 .gallery__img{
@@ -735,4 +736,8 @@ button{
 .slider__img{
     width: 100%;
     height: 70%;
+}
+
+.btnchangeImg{
+    margin: 25% 43%;
 }
