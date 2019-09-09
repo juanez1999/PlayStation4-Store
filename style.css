@@ -1,15 +1,15 @@
+
 body{
     margin: 0;
 }
 
 h1{
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: bold;
 }
 
 h2{
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
 }
 
@@ -130,7 +130,7 @@ button{
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 75px;
 }
 
@@ -308,7 +308,6 @@ button{
 }
 
 .banner__accessoriesInfo h1{
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -361,6 +360,8 @@ button{
     position: absolute;
     color: white;
     margin-left:80px; 
+    font-size: 30px;
+
 }
 
 .shop__itemRect{
@@ -425,7 +426,9 @@ button{
     z-index: 1;
     position: absolute;
     color: white;
-    margin-left:80px; 
+    margin-left:70px;
+    font-size: 30px;
+     
 }
 
 .shop__itemRect2{
@@ -490,7 +493,9 @@ button{
     z-index: 1;
     position: absolute;
     color: white;
-    margin-left:80px; 
+    margin-left:70px; 
+    font-size: 30px;
+
 }
 
 .shop__itemRect3{
@@ -556,7 +561,9 @@ button{
     z-index: 1;
     position: absolute;
     color: white;
-    margin-left:80px; 
+    margin-left:70px;
+    font-size: 30px;
+ 
 }
 
 .shop__itemRect4{
@@ -677,7 +684,7 @@ button{
 
 .miniBanner__offer h1{
     width: 340px;
-    font-size: 30px;
+    font-size: 29px;
     color: white;
     align-content: center;
     margin-left: 25px;
@@ -699,7 +706,7 @@ button{
     width: 180px;
     height: 50px;
     background:#F57600;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 50px;
 }
 
@@ -709,7 +716,6 @@ button{
 }
 
 .gallery__tape{
-    position: absolute;
     z-index: -1;
     display: flex;
     align-items: flex-start;
@@ -726,6 +732,7 @@ button{
     z-index: 1;
     width: 100%;
     justify-content: center;
+    margin-top: -1000px;
 }
 
 .gallery__img{
@@ -741,3 +748,37 @@ button{
 .btnchangeImg{
     margin: 25% 43%;
 }
+
+.specific{
+    display: flex;
+    margin-top: 70px;
+}
+
+.specific__img{
+    width: 500px;
+    height: auto;
+}
+.specific__info{
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+}
+
+.specific__info h1{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 4    0px;
+}
+
+.specific__infoText h2{
+    margin: 0px;
+}
+
+.specific__infoText{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+
