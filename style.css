@@ -19,7 +19,7 @@ button{
     border: none;   
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-
+    
 }
 .section{
     height: calc(100vh - 120px);
@@ -361,7 +361,7 @@ button{
     color: white;
     margin-left:80px; 
     font-size: 30px;
-
+    
 }
 
 .shop__itemRect{
@@ -428,7 +428,7 @@ button{
     color: white;
     margin-left:70px;
     font-size: 30px;
-     
+    
 }
 
 .shop__itemRect2{
@@ -495,7 +495,7 @@ button{
     color: white;
     margin-left:70px; 
     font-size: 30px;
-
+    
 }
 
 .shop__itemRect3{
@@ -563,7 +563,7 @@ button{
     color: white;
     margin-left:70px;
     font-size: 30px;
- 
+    
 }
 
 .shop__itemRect4{
@@ -761,24 +761,43 @@ button{
 .specific__info{
     display: flex;
     flex-direction: column;
-    margin-top: -70px;
+    margin-top: -60px;
 }
 
 .specific__info h1{
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 800;
-    margin-bottom: 4    0px;
+    margin-top: -30px;
+}
+
+.specific__info h3{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 42px;
+    margin-top: 10px;
+    color: #606060;
 }
 
 .specific__infoText h2{
     margin: 0px;
 }
 
+.specific__infoSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+
 .specific__infoText{
     display: flex;
     flex-direction: column;
     width: 350px;
+    padding: 20px;
 }
+
 
 
