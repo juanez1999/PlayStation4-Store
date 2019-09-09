@@ -24,6 +24,7 @@ button{
 .section{
     height: calc(100vh - 120px);
 }
+
 .navGlobal{
     width: 100%;
     display:flex;
@@ -161,12 +162,16 @@ button{
     margin: 40px 40px;
 }
 
+
 .product__salientImg{
     width: 500px;
     position:absolute;
     z-index: 1;
     margin-left: 120px;
+    transition: transform .3s ease-in-out;
 }
+
+
 
 .product__salientRect{
     width: auto;
@@ -201,22 +206,30 @@ button{
     color: white;
     font-size: 15px;
 }
+
+.lowerSalient{
+    display: flex;
+    flex-direction: row;
+}
+
 .change__salient{
     display: flex;
     flex-direction: row;
-    margin-left:60px; 
+    margin-left:50px; 
     margin-top: 30px;
+    width: 700px;
 }
 
 .change__salient ul{
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    list-style-type: none;
+    align-items: center;
 }
 
 .change__salient a{
     text-decoration: none;
-    
+    padding: 10px;
     font-family: Roboto Light;
     font-style: normal;
     font-weight: 300;
@@ -226,7 +239,47 @@ button{
 
 .change__salient--next{
     color:#FF1E0F;
-    margin-left:70px; 
+}
+
+.changeColor{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin-top: 40px;   
+}
+
+.changeColor button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0px 10px;
+}
+
+.changeColor__white{
+    background:#E6E6E6;
+}
+
+.changeColor__black{
+    background: black;
+}
+
+.changeColor__blue{
+    background: blue;
+}
+
+.changeColor__pink{
+    background: purple;
+}
+
+.changeColor__green{
+    background: green;
+}
+
+.product__salient--active{
+    width: 455px;
+    height: auto;
+    margin-left: 145px;
 }
 
 .banner__accessories{
@@ -650,3 +703,36 @@ button{
     margin-left: 50px;
 }
 
+.gallery{
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery__tape{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+
+.gallery__tape--inactive{
+    transition: none;
+}
+
+.gallery__nav{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-left: 90%;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 70%;
+}
+
+.slider__img{
+    width: 100%;
+    height: 70%;
+}
