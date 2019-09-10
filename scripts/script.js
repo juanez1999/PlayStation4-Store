@@ -73,4 +73,11 @@ function handleClickIzq(event) {
 btnArrowIzq.addEventListener('click', handleClickIzq);
 
 
+var navGlobalBtn = document.querySelector('.navGlobal__btn');
+var nav = document.querySelector('.navGlobal__menu');
 
+function handleClickHamburguer(){
+    nav.classList.toggle('navGlobal__menu--active');
+}
+
+navGlobalBtn.addEventListener('click', handleClickHamburguer);

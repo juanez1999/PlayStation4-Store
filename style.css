@@ -32,7 +32,7 @@ button{
     align-items: center;
 }
 
-.navGlobal__logo{
+.navGlobal__logoImg{
     width: 100px;
     margin: 15px;
     height: auto;
@@ -40,12 +40,11 @@ button{
 }
 
 .navGlobal__menu{
-    display: flex;
-    width: 700px;
+    width: 50%;
     margin-left: 20px;
-}
-
-.navGlobal__menu ul{
+    transition: all .4s ease;
+    position: relative;
+    
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -74,10 +73,11 @@ button{
 
 .navGlobal__search{
     display: flex;
+    flex-direction: row;
+    margin-right: 100px;
 }
 
 .navGlobal__searcher{
-    flex-direction: row;
     border: none;
     border-bottom: 2px solid #404040;
     padding: 20px;
@@ -92,21 +92,21 @@ button{
     width: 25px;
 }
 
-.navGlobal__shop{
+.navGlobal__searchPs4{
+    display: none;
+}
+
+
+.navGlobal__shop img{
     display: flex;
-    width: 200px;
-    padding: 40px;
-    margin-left: 130px;
-}
-
-.navGlobal__shopping{
-    margin: 0px 40px;
-    width: 100px;
     height: auto;
+    width: 40px;
 }
 
-.navGlobal__burguer{
-    margin-left: 60px;
+.navGlobal__btn{
+    background: none;
+    border: none;
+    display: none;
 }
 
 .salient{
@@ -956,5 +956,82 @@ button{
 
 .footer__lowerList a:hover{
     color: #8fdffd;
+}
+
+@media (max-width: 720px){
+    
+    .navGlobal__menu{
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0px;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        transform: translate(-100%, 0%)
+    }
+    
+    .navGlobal__menu--active{
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(0%, 0%);
+    }
+    .navGlobal button{
+        border-radius: 0px;
+        color: none;
+        border: none;   
+        box-shadow: none;
+        cursor: pointer;
+    }
+    
+    .navGlobal{
+        justify-content: space-between;
+    }
+    
+    .navGlobal__itemsRigth{
+        display: flex;
+        order: 3;
+        width: 30%;
+    }
+    
+    .navGlobal__btn{
+        display: block;
+        margin-left: 50px;
+        order: 3;
+    }
+    
+    .navGlobal__logo{
+        order: 1;
+    }
+    
+    .navGlobal__search{
+        display: flex;
+        width: 30%;
+        margin-right: 0px;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+    
+    .navGlobal__searcher{
+        display: none;
+    }
+    
+    .navGlobal__searcherLogo{
+        width: 35px;
+        position: relative;
+        height: 35px;
+        margin-top: 0px;
+    }
+    
+    .navGlobal__searchPs4{
+        display: block;
+        width: 80px;
+    }
+    
+    .product__salientRect{
+        display: none;
+    }
+    
 }
 
