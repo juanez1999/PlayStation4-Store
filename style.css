@@ -1074,9 +1074,23 @@ button{
     .product__salientRect{
         display: none;
     }
-    
+
+    .salient__buychange{
+        display: flex;
+        flex-direction: column;
+    }
+
     .buy__salient{
-        display: none;
+        order:2;
+        width: 100%;
+        margin:0px;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .buy__salient h1{
+        margin: 10px;
+        font-size: 6vw;
     }
     
     .lowerSalient{
@@ -1084,6 +1098,7 @@ button{
         width: 100%;
         flex-direction: column;
         margin-top: 30px;
+        order:1;
     }
 
     .changeColor{
@@ -1096,7 +1111,7 @@ button{
         margin: 0px;
         width: 100%;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
         order: 2;
     }
     
