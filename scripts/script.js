@@ -1,23 +1,22 @@
 
-var btnchangeBlack = document.querySelector('.changeColor__black');
 var changed = document.querySelector('.product__salient');
 var firstChange = changed.querySelector('.product__salientImg');
-var btnChange= document.querySelectorAll('btnchangeColor');
+var btnChange= document.querySelectorAll('.btnchangeColor');
 
+console.log(btnChange.length);
 
-function clickColor(){
-    console.log("hola");
-    firstChange.setAttribute('src','https://media.playstation.com/is/image/SCEA/playstation-accessories-hub-dualshock-4-jet-black-01-ps4-us-10may18?$native_md_t$')
+function iterateButtons(btn, index) {
+
+    function handleClickColors() {
+        console.log("hola");
+        firstChange.setAttribute('src','./recursos/control'+(index+1)+".png");
+    }
+
+    btn.addEventListener('click', handleClickColors);
 }
 
-btnchangeBlack.addEventListener('click',clickColor);
+btnChange.forEach(iterateButtons);
 
-for(i=0; i<btnChange.length ; i++){
-    var btn=btnChange[i];
-    btn.addEventListener('click',function(event, i){
-
-    });
-}
 
 var btnArrowDer = document.querySelector('.change__Der');
 var slider = document.querySelector('.gallery');
