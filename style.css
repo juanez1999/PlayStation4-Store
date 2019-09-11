@@ -1196,5 +1196,33 @@ button{
     .banner__offer button{
         width: 40vw;
     }
+
+    .miniBanner__offer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .miniBanner__offer h1{
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .miniBanner__offer h2{
+        font-size: 3vw;
+        border-left: 0px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 40px;
+        width: 100%;
+    }
+
+    .miniBanner__offer button{
+        margin: 20px 0px;
+        width: 40vw;
+    }
+
+    .gallery__nav{
+        margin-top:0px;
+    }
 }
 
