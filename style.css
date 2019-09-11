@@ -728,7 +728,7 @@ button{
     z-index: 1;
     width: 100%;
     justify-content: center;
-    margin-top: -1000px;
+    margin-top: -900px;
 }
 
 .gallery__img{
@@ -1222,7 +1222,13 @@ button{
     }
 
     .gallery__nav{
-        margin-top:0px;
+        margin-top:-330px;
+        width: 100%;
+    }
+
+    .btnchangeImg{
+        margin: 10% 35%;
+        width: 10vw;
     }
 }
 
