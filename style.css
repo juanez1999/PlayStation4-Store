@@ -809,7 +809,7 @@ button{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
 .newslatter h1{
@@ -868,7 +868,8 @@ button{
 .newslatter__btn{
     width: 860px;
     height: 40px;
-    margin-top: 20px;
+    margin: 25px 0px;
+
     
     border: none;
     border-radius: 15px;
@@ -1192,11 +1193,11 @@ button{
         width: 100%;
         line-height: 1.5em;
     }
-
+    
     .banner__offer button{
         width: 40vw;
     }
-
+    
     .miniBanner__offer{
         flex-direction: column;
         align-items: center;
@@ -1206,7 +1207,7 @@ button{
         width: 100%;
         text-align: center;
     }
-
+    
     .miniBanner__offer h2{
         font-size: 3vw;
         border-left: 0px;
@@ -1215,33 +1216,65 @@ button{
         margin-left: 40px;
         width: 100%;
     }
-
+    
     .miniBanner__offer button{
         margin: 20px 0px;
         width: 40vw;
     }
-
+    
     .gallery__nav{
         margin-top:-330px;
         width: 100%;
     }
-
+    
     .btnchangeImg{
         margin: 10% 35%;
         width: 10vw;
     }
-
+    
     .specific__control{
         display: none;
     }
-
+    
     .specific__info{
         width: 100%;
         text-align: center;
     }
-
+    
     .specific__infoSection{
         justify-content: center;
+    }
+    
+    .newslatter__text h1{ 
+        font-size: 8vw;
+    }
+    
+    .newslatter__text h2{
+        font-size: 3vw;
+    }
+
+    .newslatter{
+        height: 100%;
+    }
+
+    .newslatter__inputs{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .newslatter__email{
+        margin: 0px 10px;
+        height: 6vw;
+    }
+
+    .newslatter__name{
+        margin: 0px 10px;
+        height: 6vw;
+    }
+    
+    .newslatter__btn{
+        width: 95vw;
+        margin-top: 0px;
     }
 }
 
