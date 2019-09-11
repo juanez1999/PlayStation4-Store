@@ -756,7 +756,7 @@ button{
 }
 
 .specific__img{
-    width: 500px;
+    width: 40vw;
 }
 
 .specific__info{
@@ -1229,6 +1229,19 @@ button{
     .btnchangeImg{
         margin: 10% 35%;
         width: 10vw;
+    }
+
+    .specific__control{
+        display: none;
+    }
+
+    .specific__info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .specific__infoSection{
+        justify-content: center;
     }
 }
 
