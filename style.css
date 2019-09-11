@@ -342,15 +342,17 @@ button{
 .shop{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 1000px;
+    height: 100%;
 }
 
 .shop__item{
     display: flex;
     flex-direction: row;
-    margin: 0px 130px;
+    margin: 20px 80px;
     width: 400px;
+    height: 200px;
 }
 
 .shop__item h1{
