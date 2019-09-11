@@ -254,7 +254,7 @@ button{
 }
 
 .changeColor__white{
-    background:#E6E6E6;
+    background:#B4B4B4;
 }
 
 .changeColor__black{
@@ -266,11 +266,11 @@ button{
 }
 
 .changeColor__pink{
-    background: purple;
+    background: #DE4E81;
 }
 
 .changeColor__green{
-    background: green;
+    background: #4df812;
 }
 
 .product__salient--active{
