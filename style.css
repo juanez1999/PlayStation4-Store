@@ -112,12 +112,13 @@ button{
 .salient{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .info__salient{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 50%;
     margin-left:100px; 
     margin-top: 40px;
     border-left: 10px solid #FF5247;
