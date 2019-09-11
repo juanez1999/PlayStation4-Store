@@ -158,7 +158,7 @@ button{
 .product__salient{
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: 100%;
     margin: 40px 40px;
 }
 
@@ -171,8 +171,7 @@ button{
 }
 
 .product__salientRect{
-    width: 350px;
-    height: 387px;
+    height: 60%;
     position: absolute;
     z-index: -1;
     margin-left: 434px;
@@ -213,7 +212,6 @@ button{
     display: flex;
     flex-direction: row;
     margin-left:50px; 
-    margin-top: 30px;
     width: 700px;
 }
 
@@ -242,7 +240,6 @@ button{
     display: flex;
     flex-direction: row;
     width: 300px;
-    margin-top: 40px;   
 }
 
 .changeColor button{
@@ -287,6 +284,7 @@ button{
     margin-top:40px;
     background: rgba(5, 41, 111, 0.91);
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -351,7 +349,7 @@ button{
 .shop__item{
     display: flex;
     flex-direction: row;
-    margin: 20px 80px;
+    margin: 20px 120px;
     width: 400px;
     height: 200px;
 }
