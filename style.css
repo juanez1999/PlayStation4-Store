@@ -281,7 +281,7 @@ button{
     display: flex;
     flex-direction: row;
     margin: 0%;
-    padding: 0 12%;
+    padding: 0% 12%;
     margin-top:40px;
     background: rgba(5, 41, 111, 0.91);
     align-items: center;
