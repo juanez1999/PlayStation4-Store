@@ -13,9 +13,25 @@ function createRoutes (app, db) {
         response.render('store');
     });
 
-    app.get('/producto', (request, response) => {
-        console.log('alguien entró a la ruta de tienda');
-        response.render('product');
+    app.get('/producto/:id', (request, response) => {
+        console.log('alguien entró al producto');
+
+        const products = db.collection('products');
+        
+        //buscamos todos los productos
+        products.find({_id: new ObjectID(request.params.id)}).toArray((err,result) =>{
+
+            assert.equal(null,err);
+
+            var context = {
+                product: result[0],
+            };
+
+            console.log(result);
+            response.render('product',context);
+        });
+
+        
     });
 
     app.get('/api/productsItems', (request, response) => {
@@ -42,6 +58,7 @@ function createRoutes (app, db) {
             
                 response.send(result);
             });
+            return;
         }
 
         if(request.query.orderType == 'priceFalling'){
@@ -51,6 +68,8 @@ function createRoutes (app, db) {
             
                 response.send(result);
             });
+            return;
+
         }
 
         if(request.query.orderType == 'Offers'){
@@ -60,6 +79,7 @@ function createRoutes (app, db) {
             
                 response.send(result);
             });
+            return;
         }
 
         if(request.query.orderType == 'Popularity'){
@@ -69,7 +89,17 @@ function createRoutes (app, db) {
             
                 response.send(result);
             });
+            return;
         }
+
+        products.find({})
+        //transformamos el cursor a una arreglo
+        .toArray((err,result) => {
+            //aseguramos de que no hay error
+            assert.equal(null,err);
+            
+            response.send(result);
+        });
     });
 
 

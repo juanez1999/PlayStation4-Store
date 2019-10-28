@@ -1,7 +1,10 @@
 window.addEventListener('load', function(){
 
-    function displayList() {
-        fetch('/api/productsItems')
+    var orderList = document.querySelector(".orderType");
+    console.log(orderList);
+
+    function displayList(order) {
+        fetch('/api/products'+order)
         .then(function(response) {
             return response.json();
         })
@@ -14,19 +17,22 @@ window.addEventListener('load', function(){
             listItems.forEach(element => {
                 var product = document.createElement('div');
                 product.className= 'mainStore__productsItem';
-                product.innerHTML = '<a href="/producto"><img class="mainStore__productsImg" src='+element.image+'></img></a><div class="mainStore__productsItemBuy"><h3>'+element.name+'</h3><h3 style="color: #FF5247;">$'+element.price+'</h3><div class="mainStore__productsItemBtnBuy"><button class="mainStore__addToCart"></button><h4>Agregar al carrito</h4></div><div class="mainStore__productsPopularity"><h3>'+element.popularity+'</h3><img class="mainStore__productsStar" src="./recursos/star.png"></img></div></div>';
+                product.innerHTML = '<a href="/producto/'+element._id+'"><img class="mainStore__productsImg" src='+element.image+'></img></a><div class="mainStore__productsItemBuy"><h3>'+element.name+'</h3><h3 style="color: #FF5247;">$'+element.price+'</h3><div class="mainStore__productsItemBtnBuy"><button class="mainStore__addToCart"></button><h4>Agregar al carrito</h4></div><div class="mainStore__productsPopularity"><h3>'+element.popularity+'</h3><img class="mainStore__productsStar" src="./recursos/star.png"></img></div></div>';
                 container.appendChild(product);
                 product.style.backgroundColor=element.color;
     
             });
             console.log(listItems);
-
-            listItems[index];
-            console.log(listItems[index]._id);
         });
     }
     
-    displayList();
+    displayList("");
+
+    orderList.addEventListener("change", function() {
+        console.log(orderList.value);
+        displayList("?orderType="+orderList.value);
+    });
+ 
 });
 
 // intente esto para hacer que cada cosa tuviera su contenedor
