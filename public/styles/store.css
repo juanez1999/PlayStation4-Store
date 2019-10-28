@@ -1,0 +1,133 @@
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+.storeTop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.storeTop__title{
+    width: 20%;
+    height: 100%;
+    margin-left: 50px;
+    border-left: 8px  solid #FF5247;
+}
+
+.storeTop__order{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.storeTop__order h3{
+    margin-right: 20px;
+}
+
+.storeTop__order select{
+    height: 20%;
+    margin-top: 20px;
+}
+
+.mainStore{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+
+.mainStore__filters{
+    margin-left: 60px;
+}
+
+.mainStore__filters a{
+    text-decoration: none;
+}
+
+.mainStore__filters li{
+    list-style:none;
+}
+
+.mainStore__filters li ul{
+    display:none;
+	position:absolute;
+    min-width:140px;
+}
+
+.mainStore__filters li:hover > ul {
+    display:block;
+}
+
+.mainStore__filters li:active > ul{
+    display: block;
+}
+
+.mainStore__products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-top: -30px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.mainStore__productsItemBuy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.mainStore__productsImg{
+    width: 350px;
+    height: auto;
+}
+
+.mainStore__products h3{
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+.mainStore__addToCart{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: none;
+    border: black;
+}
+
+.mainStore__productsStar{
+    width: 30px;
+    height: 30px;
+}
+
+.mainStore__productsItemBtnBuy{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainStore__productsItemBtnBuy h4{
+    width: 70px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.mainStore__productsPopularity{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    justify-content: space-between;
+}
+
+

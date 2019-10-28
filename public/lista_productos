@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Control PS4 Blanco",
+    "price": 149.999,
+    "color": "blanco",
+    "description": [
+
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/control1.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Verde",
+    "price": 149.999,
+    "color": "verde",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/control5.png",
+    "popularity": 4
+  },
+  {
+    "name": "Control PS4 Rosado",
+    "price": 129.999,
+    "color": "rosado",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/control4.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Azul",
+    "price": 109.999,
+    "color": "azul",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/control3.png",
+    "popularity": 3
+
+  }
+]

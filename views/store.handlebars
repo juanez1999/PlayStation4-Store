@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/store.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="storeTop">
+
+        <div class="storeTop__title">
+            <h1>Todos los accesorios para ti</h1>
+        </div>
+        
+        <div class="storeTop__order">
+            <h3>Ordenar por:</h3>
+
+            <form action="/api/products" method="GET">
+                <select name="orderType">
+                    <option value="priceAscending">Precio ascendente</option>
+                    <option value="priceFalling">Precio descendente</option>
+                    <option value="Offers">Ofertas</option>
+                    <option value="Popularity">Popularidad</option>
+                </select>
+                <button type="submit">Ordenar</button>
+            </form>
+            
+
+        </div>
+        
+    </div>
+
+    <div class="mainStore">
+
+        <div class="mainStore__filters">
+            <li><a href="">Ocultar filtros</a>
+                <ul>
+                    <li><a href="">Color</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Precio</a></li>
+
+                </ul>
+            </li>
+            <h3>Ocultar filtros</h3>
+            <h4>Color</h4>
+            <h4>Productos</h4>
+            <h4>Precio</h4>
+                        <a href="/">Ir al inicio</a>
+
+        </div>
+
+        <div class="mainStore__products">
+            
+        </div>
+
+    </div>
+
+    
+
+    
+    
+
+        <script src="scripts/store.js"></script>
+
+</body>
+</html>
+
+

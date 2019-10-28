@@ -1,3 +1,4 @@
+window.addEventListener('load', function(){
 
 var changed = document.querySelector('.product__salient');
 var firstChange = changed.querySelector('.product__salientImg');
@@ -81,3 +82,7 @@ function handleClickHamburguer(){
 }
 
 navGlobalBtn.addEventListener('click', handleClickHamburguer);
+
+
+
+});
