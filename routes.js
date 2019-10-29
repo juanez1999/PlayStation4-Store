@@ -13,6 +13,32 @@ function createRoutes (app, db) {
         response.render('store');
     });
 
+    app.get('/api/carItems', (request, response) => {
+        const products = db.collection('carItems');
+        
+        //buscamos todos los productos
+        products.find({})
+        //transformamos el cursor a una arreglo
+        .toArray((err,result) => {
+            //aseguramos de que no hay error
+            assert.equal(null,err);
+            
+            response.send(result);
+        });
+    });
+
+    app.post('/api/carItems', (request, response) => {
+        const products = db.collection('carItems');
+        
+
+        //push para meter el arreglo de id y update para actualizarlo
+        products.push(request.body);
+        
+         response.send({
+            message: 'ok'
+         });
+    });
+
     app.get('/producto/:id', (request, response) => {
         console.log('alguien entró al producto');
 
