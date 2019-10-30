@@ -37,12 +37,12 @@ window.addEventListener('load', function(){
                     promise.then((raw) => {
                         return raw.json();
                     }).then((info) => {
-                        displayList("");
+                        displayCar();
                         console.log(info);
                     });
                 });
 
-                
+
     
             });
             console.log(listItems);
