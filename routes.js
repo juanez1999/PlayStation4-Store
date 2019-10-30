@@ -33,16 +33,19 @@ function createRoutes(app, db) {
         products.find({}).toArray((err, result) => {
             //aseguramos de que no hay error
             assert.equal(null, err);
-            result[0].products.push(request.body.idProduct);
+            var car = result[0];
+            car.products.push(request.body.idProduct);
+            console.log(car);
 
-            products.updateOne({ id: 0 },
+            products.updateOne({ _id: new ObjectID(car._id) },
                 {
-                    $set: { products: result[0].products }
+                    $set: { products: car.products }
                 }
             );
 
             response.send({
                 message: 'ok',
+                car
             });
         });
 

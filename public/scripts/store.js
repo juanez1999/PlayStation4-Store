@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
                     promise.then((raw) => {
                         return raw.json();
                     }).then((info) => {
-                        displayList();
+                        displayList("");
                         console.log(info);
                     });
                 });
