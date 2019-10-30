@@ -13,7 +13,7 @@ function createRoutes(app, db) {
         response.render('store');
     });
 
-    app.get('/api/carItemss', (request, response) => {
+    app.get('/api/carItems', (request, response) => {
         const products = db.collection('carItems');
 
         //buscamos todos los productos
@@ -23,7 +23,9 @@ function createRoutes(app, db) {
                 //aseguramos de que no hay error
                 assert.equal(null, err);
 
-                response.send(result);
+                
+
+                response.send(result[0]);
             });
     });
 

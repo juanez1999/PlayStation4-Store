@@ -41,6 +41,8 @@ window.addEventListener('load', function(){
                         console.log(info);
                     });
                 });
+
+                
     
             });
             console.log(listItems);
