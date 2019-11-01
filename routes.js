@@ -145,6 +145,39 @@ function createRoutes(app, db) {
             });
     });
 
+    app.get('/compra', (request, response) => {
+        const carItems = db.collection('carItems');
+        const products = db.collection ('products');
+        //buscamos todos los productos
+        carItems.find({})
+            //transformamos el cursor a una arreglo
+            .toArray((err, result) => {
+                //aseguramos de que no hay error
+                assert.equal(null, err);
+
+                var context = {
+                    car: result[0],
+                };
+
+                var ids = [];
+                
+                console.log(result[0]);
+                result[0].products.forEach(id => {
+                    ids.push(new ObjectID (id));
+                });
+                
+
+                products.find({ _id: {$in: ids}})
+                //transformamos el cursor a una arreglo
+                .toArray((err, resultProducts) => {
+                    console.log(resultProducts);
+                });
+    
+                response.render('car', context);
+
+
+            });
+    });
 
 }
 
