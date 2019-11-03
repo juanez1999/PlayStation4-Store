@@ -155,25 +155,53 @@ function createRoutes(app, db) {
                 //aseguramos de que no hay error
                 assert.equal(null, err);
 
-                var context = {
-                    car: result[0],
-                };
 
                 var ids = [];
-                
-                console.log(result[0]);
+
+                //console.log(result[0]);
+
+                //arreglo de ids
                 result[0].products.forEach(id => {
                     ids.push(new ObjectID (id));
                 });
+                
                 
 
                 products.find({ _id: {$in: ids}})
                 //transformamos el cursor a una arreglo
                 .toArray((err, resultProducts) => {
-                    console.log(resultProducts);
-                });
+                    //console.log(resultProducts);
+
+
+                    //arreglo de productos 
+                    resultProducts.forEach( product => {
+
+                        var count = 0;
     
-                response.render('car', context);
+
+                        result[0].products.forEach( resultId => {
+
+
+                            if(resultId == product._id){
+                                count += 1;
+                            }
+                        });
+
+                       
+
+                        product.count = count;
+
+                    });
+                    
+                    var context = {
+                        products: resultProducts,
+                    };
+
+                    response.render('car', context);
+                });
+
+    
+                
 
 
             });
