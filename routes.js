@@ -71,7 +71,7 @@ function createRoutes(app, db) {
             };
 
             console.log(result);
-            response.render('product', context);
+            response.render('productDetails', context);
         });
 
 
