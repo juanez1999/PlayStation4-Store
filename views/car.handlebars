@@ -1,3 +1,28 @@
+    <link rel="stylesheet" href="/styles/car.css">
+    
+    <div class="carTitle">
+          <h1>Carrito de compras</h1>
+     </div>
+
 {{#each products}}
+    <div class="carItem">
+        <div class="carItem__description">
+            <div class="carItem__descriptionImg">
+                <img src="{{image}}" alt="">
+            </div>
+            <div class="carItem__descriptionInfo">
+                <h1>{{name}}</h1>
+                <h2>PlayStation 4</h2>
+                <h3>Disponible</h3>
+                <a class="carItem__descriptionInfoSave" href="#">Guardar para más tarde</a>
+                <a href="/tienda">Comparar con otros articulos</a>
+            </div>
+        </div>
+        <div class="carItem__important">
+            <h2>Precio</h2>
+            <h1>${{price}}</h1>
+        </div>
+    </div>
     {{name}}--{{count}}<br>
+
 {{/each}}
