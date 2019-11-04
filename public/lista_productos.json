@@ -14,7 +14,9 @@
                     "- Plataformas de juego soportadas: PlayStation 4"
                     ],
     "image": "recursos/control1.png",
-    "popularity": 5
+    "popularity": 5,
+    "imageOption2": "recursos/control1_view2.png",
+    "imageOption3": "recursos/control1_view3.png"
   },
   {
     "name": "Control PS4 Verde",
