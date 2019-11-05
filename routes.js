@@ -57,17 +57,26 @@ function createRoutes(app, db) {
     });
     
     app.delete('/api/carItems', (request, response) => {
-        var index = request.body.indexToDelete;
         const products = db.collection('carItems');
-        products.deleteOne({
-            _id: new ObjectID(index),
-        },function(err,result){
-            console.log(err,result);
-        });
-        response.send({
-            message: 'deleted',
-        });
+
+        products.find({}).toArray((err, result) => {
+            //aseguramos de que no hay error
+            assert.equal(null, err);
+            var car = result[0];
+            console.log("Este es el request:"+request.body.indexToDelete);
+            car.products.splice(request.body.indexToDelete,1);
+            
+            products.updateOne({ _id: new ObjectID(car._id) },
+            {
+                $set: { products: car.products }
+            }
+            );
+            
+            response.send({
+                message: 'delete'
+            });
     });
+});
     
     app.get('/producto/:id', (request, response) => {
         console.log('alguien entró al producto');
