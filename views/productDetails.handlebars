@@ -5,6 +5,7 @@
           <h1 class="productName__name">
                {{product.name}}
           </h1>
+          <h1>{{product._id}}</h1>
      </div>
     
     <div class="productDetail"> 
@@ -31,7 +32,7 @@
               <h1 class="productDetail__featuresTitle">Caracteristicas</h1>
               <h3 class="productDetail__featuresDescription">{{product.description}}</h3>
               <h1 class="productDetail__featuresPrice">${{product.price}}</h1>
-              <button class="productDetail__featuresAddToCart">Agregar al carrito</button>
+              <button data-id="{{product._id}}" class="productDetail__featuresAddToCart">Agregar al carrito</button>
               <a class="productDetail__featuresMoreProducts" href="/tienda">Ver más productos</a>
          </div>
 
