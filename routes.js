@@ -63,8 +63,9 @@ function createRoutes(app, db) {
             //aseguramos de que no hay error
             assert.equal(null, err);
             var car = result[0];
-            console.log("Este es el request:"+request.body.indexToDelete);
-            car.products.splice(request.body.indexToDelete,1);
+     
+            var index = car.products.indexOf(request.body.indexToDelete);
+            car.products.splice(index,1);
             
             products.updateOne({ _id: new ObjectID(car._id) },
             {
