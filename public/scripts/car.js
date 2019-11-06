@@ -17,7 +17,6 @@ window.addEventListener('load', function(){
                     promise.then(function(response) {
                         return response.json();
                     }).then(function(info) {
-                        console.log(info);
                         location.reload();
                     });
                 });

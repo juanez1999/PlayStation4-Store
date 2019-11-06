@@ -78,6 +78,24 @@ function createRoutes(app, db) {
             });
     });
 });
+
+    app.post('/api/orders',(request,response) => {
+        const carItems = db.collection('carItems');
+        const orders = db.collection('orders');
+
+        carItems.find({}).toArray((err, result) => {
+            assert.equal(null, err);
+
+            request.body.products;
+            console.log(request.body.products);
+
+            orders.insertOne(request.body);
+        });
+
+        response.send({
+            message: 'ok'
+        });
+    });
     
     app.get('/producto/:id', (request, response) => {
         console.log('alguien entró al producto');
