@@ -86,8 +86,13 @@ function createRoutes(app, db) {
         carItems.find({}).toArray((err, result) => {
             assert.equal(null, err);
 
-            request.body.products;
-            console.log(request.body.products);
+            var car = result[0];
+            //request.body.products ---> products es la nueva variable que le quiero agregar a la información que llega
+            //a través del body y que es la info del formulario, luego el igual es el valor de esa variable que es car.products
+            //que es los productos en la colección del carrito
+            //de esta manera con el punto .variable se agregan nuevas cosas a un objecto
+            request.body.products = car.products;
+            console.log("esta es la wea:"+request.body.products);
 
             orders.insertOne(request.body);
         });
