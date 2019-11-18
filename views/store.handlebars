@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PlayStation 4 Tienda</title>
     <link rel="stylesheet" href="styles/store.css">
 </head>
 <body>
@@ -31,14 +31,51 @@
     <div class="mainStore">
 
         <div class="mainStore__filters">
-            <li><a href="">Ocultar filtros</a>
-                <ul>
-                    <li><a href="">Color</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Precio</a></li>
+            <h1 class="mainStore__filtersTitleBig">Filtrar por:</h1>
+            <h2 class="mainStore__filtersTitle">Color</h2>
+             <div class="mainStore__filtersCheckbox">
+                <label for="type__white" class="filter__body">Blanco</label>
+                <input type="checkbox" id="type__white" value="white" class="filter__inputCheckbox">
+            </div>
 
-                </ul>
-            </li>
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__black" class="filter__body">Negro</label>
+                <input type="checkbox" id="type__black" value="black" class="filter__inputCheckbox">
+            </div>
+
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__blue" class="filter__body">Azul</label>
+                <input type="checkbox" id="type__blue" value="blue" class="filter__inputCheckbox">
+            </div>
+
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__pink" class="filter__body">Rosado</label>
+                <input type="checkbox" id="type__pink" value="pink" class="filter__inputCheckbox">
+            </div>
+
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__green" class="filter__body">Verde</label>
+                <input type="checkbox" id="type__green" value="green" class="filter__inputCheckbox">
+            </div>
+            
+            <h2 class="mainStore__filtersTitle">Productos</h2>
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__joystick" class="filter__body">Controles PS4</label>
+                <input type="checkbox" id="type__joystick" value="joystick" class="filter__inputCheckbox">
+            </div>
+
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__vr" class="filter__body">PS VR</label>
+                <input type="checkbox" id="type__vr" value="vr" class="filter__inputCheckbox">
+            </div>
+
+            <div class="mainStore__filtersCheckbox">
+                <label for="type__headphones" class="filter__body">Auriculares PS4</label>
+                <input type="checkbox" id="type__headphones" value="headphones" class="filter__inputCheckbox">
+            </div>
+
+            <h2 class="mainStore__filtersTitle">Precio máximo</h2>
+            <input type="range" min="80000" max="200000" name="priceRange" class="filter__range" value="200000">
 
         </div>
 

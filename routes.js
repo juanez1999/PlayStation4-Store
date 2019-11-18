@@ -139,6 +139,14 @@ function createRoutes(app, db) {
     
     app.get('/api/products', (request, response) => {
         const products = db.collection('products');
+        var type = request.query.type;
+
+        if(Array.isArray(type)) {
+            filters.type = { $in: type };
+        } else if(type != undefined) {
+            filters.type = type;
+        }   
+
         
         if (request.query.orderType == 'priceAscending') {
             products.find().sort({ price: 1 })

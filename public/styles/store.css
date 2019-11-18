@@ -57,36 +57,18 @@ h3{
 .mainStore{
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 30px;
     justify-content: space-between;
 }
-
+.mainStore__filtersTitleBig{
+    margin: 0px;
+    font-size: 25px;
+}
 
 .mainStore__filters{
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
-.mainStore__filters a{
-    text-decoration: none;
-}
-
-.mainStore__filters li{
-    list-style:none;
-}
-
-.mainStore__filters li ul{
-    display:none;
-	position:absolute;
-    min-width:140px;
-}
-
-.mainStore__filters li:hover > ul {
-    display:block;
-}
-
-.mainStore__filters li:active > ul{
-    display: block;
-}
 
 .mainStore__products{
     display: flex;
@@ -127,8 +109,6 @@ h3{
     background-position:center;
 }
 
-
-
 .mainStore__productsStar{
     width: 30px;
     height: 30px;
@@ -153,4 +133,71 @@ h3{
     flex-direction: row;
     width: 15%;
     justify-content: space-between;
+}
+
+.mainStore__filtersTitle{
+    font-size: 22px;
+    border-bottom: #C4C4C4 2px solid;
+    margin-bottom: 8px;
+}
+
+.mainStore__filters select:focus{
+    outline: none;
+}
+
+.mainStore__filtersCheckbox {
+    margin: 5px 0;
+    position: relative;
+    width: 100%;
+}
+
+.mainStore__filtersCheckbox input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #FFF;
+    border: 2px solid black;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+}
+
+.mainStore__filtersCheckbox input:checked {
+    background-color:  #FF665C;
+}
+
+.mainStore__filtersCheckbox label{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.filter__range {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.filter__range::-webkit-slider-thumb {
+    position: relative;
+    top: -7px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #FF665C;
+}
+
+.filter__range::-webkit-slider-runnable-track {
+    height: 4px;
+    background-color: #E5E5E5;
 }

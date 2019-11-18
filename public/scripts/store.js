@@ -1,7 +1,7 @@
 window.addEventListener('load', function(){
     
     var orderList = document.querySelector(".orderType");
-    var filters = document.querySelector ("mainStore__filters");
+    var checkBoxes = document.querySelectorAll('.filter__inputCheckbox');
 
     //console.log(orderList);
 
@@ -56,6 +56,22 @@ window.addEventListener('load', function(){
     orderList.addEventListener("change", function() {
         console.log(orderList.value);
         displayList("?orderType="+orderList.value);
+    });
+
+    function handleChange() {
+        var order = '?orderType='+orderList.value;
+
+        checkBoxes.forEach((checkBox) => {
+            if(checkBox.checked) {
+                order = order.concat('&type='+checkBox.value);
+            }
+        });
+        
+        displayList(order);
+    };
+
+    checkBoxes.forEach((checkBox) => {
+        checkBox.addEventListener('change', handleChange);
     });
 
 });
