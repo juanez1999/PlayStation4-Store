@@ -1,23 +1,54 @@
-<div class="paymentTitle">
-    <h1>Continua con tu pago</h1>
+    <link rel="stylesheet" href="/styles/payPurchase.css">
 
-    <form class="form">
-        <label for="formname">Nombre:</label>
-        <input class="text" type="text" id="formname" name="name">
-
-        <label for="formid">Cedula:</label>
-        <input class="text" type="number" id="formname" name="name">
-
-        <label for="formAddress">Dirección del hogar:</label>
-        <input class="text" type="text" id="formname" name="name">
-
-        <label for="formDiscount">Codigo de descuento:</label>
-        <input class="text" type="text" id="formname" name="name">
-        
-
-        <button class="sendInfo" type="submit">Pagar</button>
-    </form>
+<div class="payment">
     
-    <script src="/scripts/payPurchase.js"></script>
+    <div class="paymentTitle">
+        <h1>Continua con tu pago</h1>
+    </div>
+
+
+    <form class="paymentForm">
+
+            <div class="formBox">
+                <label for="formname">Nombre completo</label><br>
+                <input class="text" type="text" id="formname" name="name">
+            </div>
+           
+            <div class="formBox">
+                <label for="formid">Cedula</label><br>
+                <input class="text" type="number" id="formid" name="name">
+            </div>
+            
+            <div class="formBox">
+                <label for="formAddress">Dirección del hogar</label><br>
+                <input class="text" type="text" id="formAddress" name="name">
+            </div>
+           
+            <div class="formBox">
+                <label for="formDiscount">Codigo de descuento</label><br>
+                <input class="text" type="text" id="formDiscount" name="name">   
+            </div>
+
+            <div class="formBox">
+                <label for="formPay">Metodo de pago</label><br>
+                <select class="formBox__select" name="name" id="formPay">
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="PSE">PSE</option>
+                </select>
+            </div>
+            
+            <button class="sendInfo" type="submit">Pagar</button>
+
+     </form>
+
+
 
 </div>
+
+    
+    
+
+
+<script src="/scripts/payPurchase.js"></script>
+

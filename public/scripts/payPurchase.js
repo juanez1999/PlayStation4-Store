@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
 
-    var form= document.querySelector('.form');
+    var form= document.querySelector('.paymentForm');
 
     form.addEventListener('submit',function(event){
         event.preventDefault();

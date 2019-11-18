@@ -1,7 +1,9 @@
 window.addEventListener('load', function(){
     
     var orderList = document.querySelector(".orderType");
-    console.log(orderList);
+    var filters = document.querySelector ("mainStore__filters");
+
+    //console.log(orderList);
 
     function displayList(order) {
         fetch('/api/products'+order)
@@ -56,36 +58,4 @@ window.addEventListener('load', function(){
         displayList("?orderType="+orderList.value);
     });
 
-   
- 
 });
-
-// intente esto para hacer que cada cosa tuviera su contenedor
-/*function displayList() {
-        fetch('/api/productsItems')
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(listItems) {
-            var containerImg = document.querySelector('.mainStore__productsImg');
-            var containerInfo = document.querySelector('.mainStore__productsInfo');
-            var container = document.querySelector('.mainStore__products')
-
-            
-            container.innerHTML = "";
-            
-            listItems.forEach(element => {
-                var productImg = document.createElement('ul');
-                var productInfo = document.createElement('ul');
-                productInfo.innerHTML = '<h3>'+element.name+'</h3><h3>$'+element.price+'</h3>';
-                productImg.innerHTML = '<img src='+element.image+'></img>';
-                containerImg.appendChild(productImg);
-                containerInfo.appendChild(productInfo);
-                container.appendChild(containerImg);
-                container.appendChild(containerInfo);
-                product.style.backgroundColor=element.color;
-            });
-            console.log(listItems);
-    
-        });
-    }*/
