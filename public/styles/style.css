@@ -100,7 +100,7 @@ button{
 .navGlobal__shop img{
     display: flex;
     height: auto;
-    width: 40px;
+    width: 50px;
 }
 
 .navGlobal__btn{
@@ -1302,16 +1302,18 @@ button{
     .footer__lowerList ul{
         margin:0px;
     }
-    
+   
     .footer__lowerList a{
         margin-right: 8px;
         font-size: 3vw;
         padding-right: 10px;
     }
+
+    
     
     body {overflow-x:hidden;}
-    
-    
-    
-}
 
+
+
+
+}

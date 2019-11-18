@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/mainHandle.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -29,8 +30,10 @@
         
         <div class="navGlobal__itemsRigth">
             <div class="navGlobal__shop">
-                <a href="/compra"><img class="navGlobal__shopping" src="/recursos/shop.png" alt=""></a>
-                <p class="cartCount"></p>
+                <a href="/compra"><img class="navGlobal__shopping" src="/recursos/shopCart.png" alt=""></a>
+                <div class="navGlobal__shopCartCount">   
+                    <p class="cartCount"></p>
+                </div>        
             </div>
             
             <button class="navGlobal__btn">
@@ -42,6 +45,8 @@
     </div>
 
     {{{body}}}
+
+    
 
     <script src="/scripts/script.js"></script>
     <script src="/scripts/updateCart.js"></script>

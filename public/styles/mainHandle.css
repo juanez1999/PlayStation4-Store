@@ -1,0 +1,25 @@
+
+.navGlobal__shop{
+    display: flex;
+    flex-direction: row;
+}
+
+.navGlobal__shopCartCount{
+    display: flex;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 20px;
+    margin-left: -15px;
+    text-align: center;
+}
+
+.navGlobal__shopCartCount p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0px;
+    width: 100%;
+}
