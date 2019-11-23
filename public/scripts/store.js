@@ -6,7 +6,7 @@ window.addEventListener('load', function(){
     var cartLogo = document.querySelector('.navGlobal__shop');
 
     var tl = gsap.timeline({});
-    tl.to(".navGlobal__shop",{scale: .6 , duration: 0.5,});
+    tl.to(".navGlobal__shop",{scale: .6 , duration: 0.3,});
     tl.to(".navGlobal__shop",{scale: 1 , duration: 0.5, ease: "bounce"}, "-=.1");
     tl.pause();
 
@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
 
     function rewindAnimation(){
        
-        tl.reverse();
+        tl.restart();
     }
 
     //cartLogo.addEventListener('mouseenter',playAnimation);
@@ -70,7 +70,7 @@ window.addEventListener('load', function(){
                     playAnimation();
                 });
 
-                addToCart.addEventListener("mouseleave",function() {
+                addToCart.addEventListener("mouseup",function() {
                     rewindAnimation();
                 });
     
