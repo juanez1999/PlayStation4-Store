@@ -2,7 +2,7 @@
   {
     "name": "Control PS4 Blanco",
     "price": 149.999,
-    "color": "blanco",
+    "color": "white",
     "description": [
 
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
@@ -21,7 +21,7 @@
   {
     "name": "Control PS4 Verde",
     "price": 149.999,
-    "color": "verde",
+    "color": "green",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -37,7 +37,7 @@
   {
     "name": "Control PS4 Rosado",
     "price": 129.999,
-    "color": "rosado",
+    "color": "pink",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -53,7 +53,7 @@
   {
     "name": "Control PS4 Azul",
     "price": 109.999,
-    "color": "azul",
+    "color": "blue",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",

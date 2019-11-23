@@ -139,27 +139,36 @@ function createRoutes(app, db) {
     
     app.get('/api/products', (request, response) => {
         const products = db.collection('products');
-        var type = request.query.type;
+        var color = request.query.color;
 
-        if(Array.isArray(type)) {
-            filters.type = { $in: type };
-        } else if(type != undefined) {
-            filters.type = type;
+        var filters = {};
+
+        console.log("esta es la wea:"+color);
+
+        if(Array.isArray(color)) {
+            filters.color = { $in: color };
+            console.log(filters.color);
+        } else if(color != undefined) {
+            filters.color = color;
+            console.log("el else if:"+filters.color);
+
         }   
+
+        //console.log(filters.color);
+
+        var cursor = products.find( filters );
 
         
         if (request.query.orderType == 'priceAscending') {
-            products.find().sort({ price: 1 })
+            cursor.sort({ price: 1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
                 response.send(result);
             });
             return;
-        }
-        
-        if (request.query.orderType == 'priceFalling') {
-            products.find().sort({ price: -1 })
+        }else if (request.query.orderType == 'priceFalling') {
+            cursor.sort({ price: -1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
@@ -167,36 +176,44 @@ function createRoutes(app, db) {
             });
             return;
             
-        }
-        
-        if (request.query.orderType == 'Offers') {
-            products.find().sort({ price: -1 })
+        }else if (request.query.orderType == 'Offers') {
+            cursor.sort({ price: -1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
                 response.send(result);
             });
             return;
-        }
-        
-        if (request.query.orderType == 'Popularity') {
-            products.find().sort({ popularity: -1 })
+        } else if (request.query.orderType == 'Popularity') {
+            cursor.sort({ popularity: -1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
                 response.send(result);
             });
             return;
+        } else {
+        
+            cursor
+            .toArray((err, result) => {
+
+                assert.equal(null, err);
+
+                response.send(result);
+
+                return;
+            });
+        
         }
         
-        products.find({})
-        //transformamos el cursor a una arreglo
-        .toArray((err, result) => {
-            //aseguramos de que no hay error
-            assert.equal(null, err);
+        // products.find({})
+        // //transformamos el cursor a una arreglo
+        // .toArray((err, result) => {
+        //     //aseguramos de que no hay error
+        //     assert.equal(null, err);
             
-            response.send(result);
-        });
+        //     response.send(result);
+        // });
     });
     
     app.get('/compra', (request, response) => {

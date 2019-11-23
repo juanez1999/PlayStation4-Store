@@ -3,6 +3,26 @@ window.addEventListener('load', function(){
     var orderList = document.querySelector(".orderType");
     var checkBoxes = document.querySelectorAll('.filter__inputCheckbox');
 
+    var cartLogo = document.querySelector('.navGlobal__shop');
+
+    var tl = gsap.timeline({});
+    tl.to(".navGlobal__shop",{scale: .6 , duration: 0.5,});
+    tl.to(".navGlobal__shop",{scale: 1 , duration: 0.5, ease: "bounce"}, "-=.1");
+    tl.pause();
+
+    function playAnimation(){
+        tl.play();
+    }
+
+    function rewindAnimation(){
+       
+        tl.reverse();
+    }
+
+    //cartLogo.addEventListener('mouseenter',playAnimation);
+    // cartLogo.addEventListener('mouseleave',rewindAnimation);
+
+
     //console.log(orderList);
 
     function displayList(order) {
@@ -21,12 +41,13 @@ window.addEventListener('load', function(){
                 product.className= 'mainStore__productsItem';
                 product.innerHTML = '<a href="/producto/'+element._id+'"><img class="mainStore__productsImg" src='+element.image+'></img></a><div class="mainStore__productsItemBuy"><h3>'+element.name+'</h3><h3 style="color: #FF5247;">$'+element.price+'</h3><div class="mainStore__productsItemBtnBuy"><button class="mainStore__addToCart"></button><h4>Agregar al carrito</h4></div><div class="mainStore__productsPopularity"><h3>'+element.popularity+'</h3><img class="mainStore__productsStar" src="./recursos/star.png"></img></div></div>';
                 container.appendChild(product);
-                product.style.backgroundColor=element.color;
 
                 var addToCart = product.querySelector(".mainStore__addToCart");
 
                 addToCart.addEventListener("click",function() {
                     console.log("sirve el boton",element);
+
+                    
 
                     var data= new URLSearchParams();
                     data.append("idProduct",element._id);
@@ -35,6 +56,7 @@ window.addEventListener('load', function(){
                         method : 'POST', 
                         body : data
                     });
+                    
 
                     promise.then((raw) => {
                         return raw.json();
@@ -44,7 +66,13 @@ window.addEventListener('load', function(){
                     });
                 });
 
+                addToCart.addEventListener("mousedown",function() {
+                    playAnimation();
+                });
 
+                addToCart.addEventListener("mouseleave",function() {
+                    rewindAnimation();
+                });
     
             });
             console.log(listItems);
@@ -54,19 +82,21 @@ window.addEventListener('load', function(){
     displayList("");
 
     orderList.addEventListener("change", function() {
-        console.log(orderList.value);
+        //console.log(orderList.value);
         displayList("?orderType="+orderList.value);
     });
 
     function handleChange() {
-        var order = '?orderType='+orderList.value;
+        var orderFilter = '?orderType='+orderList.value;
 
         checkBoxes.forEach((checkBox) => {
             if(checkBox.checked) {
-                order = order.concat('&type='+checkBox.value);
+                order = orderFilter.concat('&color='+checkBox.value);
+                //console.log(checkBox.value);
+               // console.log(orderFilter.concat('&type='+checkBox.value));
             }
         });
-        
+        console.log(order)
         displayList(order);
     };
 

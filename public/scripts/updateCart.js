@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
     var cartCount = document.querySelector('.cartCount');
-
+   
     function displayCar() {
         fetch('/api/carItems')
         .then(function(response) {
