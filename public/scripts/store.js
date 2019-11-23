@@ -3,8 +3,6 @@ window.addEventListener('load', function(){
     var orderList = document.querySelector(".orderType");
     var checkBoxes = document.querySelectorAll('.filter__inputCheckbox');
 
-    var cartLogo = document.querySelector('.navGlobal__shop');
-
     var tl = gsap.timeline({});
     tl.to(".navGlobal__shop",{scale: .6 , duration: 0.3,});
     tl.to(".navGlobal__shop",{scale: 1 , duration: 0.5, ease: "bounce"}, "-=.1");
