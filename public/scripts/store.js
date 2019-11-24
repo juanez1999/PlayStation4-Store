@@ -86,15 +86,17 @@ window.addEventListener('load', function(){
 
     function handleChange() {
         var orderFilter = '?orderType='+orderList.value;
+        var order= "";
+        
+        order = order.concat(orderFilter);
 
         checkBoxes.forEach((checkBox) => {
             if(checkBox.checked) {
-                order = orderFilter.concat('&color='+checkBox.value);
-                //console.log(checkBox.value);
-               // console.log(orderFilter.concat('&type='+checkBox.value));
+                order = order.concat('&color='+checkBox.value);
             }
         });
-        console.log(order)
+
+        console.log("este es el order:"+order);
         displayList(order);
     };
 

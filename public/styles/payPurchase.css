@@ -84,3 +84,11 @@
     font-size: 15px;
     margin: 60px 0px;
 }
+
+.sendInfo:focus{
+    outline: none;
+}
+
+.sendInfoTextSuccess{
+    display: none;
+}

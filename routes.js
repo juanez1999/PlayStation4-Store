@@ -92,7 +92,7 @@ function createRoutes(app, db) {
             //que es los productos en la colección del carrito
             //de esta manera con el punto .variable se agregan nuevas cosas a un objecto
             request.body.products = car.products;
-            console.log("esta es la wea:"+request.body.products);
+            //console.log("esta es la wea:"+request.body.products);
 
             orders.insertOne(request.body);
         });
@@ -136,31 +136,26 @@ function createRoutes(app, db) {
             response.send(result);
         });
     });
-    
+
+
+
     app.get('/api/products', (request, response) => {
         const products = db.collection('products');
         var color = request.query.color;
-
+        
         var filters = {};
-
-        console.log("esta es la wea:"+color);
 
         if(Array.isArray(color)) {
             filters.color = { $in: color };
-            console.log(filters.color);
         } else if(color != undefined) {
             filters.color = color;
-            console.log("el else if:"+filters.color);
+        }
 
-        }   
-
-        //console.log(filters.color);
-
-        var cursor = products.find( filters );
+        var filtersFind = products.find(filters);
 
         
         if (request.query.orderType == 'priceAscending') {
-            cursor.sort({ price: 1 })
+            filtersFind.sort({ price: 1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
@@ -168,7 +163,7 @@ function createRoutes(app, db) {
             });
             return;
         }else if (request.query.orderType == 'priceFalling') {
-            cursor.sort({ price: -1 })
+            filtersFind.sort({ price: -1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
@@ -177,7 +172,7 @@ function createRoutes(app, db) {
             return;
             
         }else if (request.query.orderType == 'Offers') {
-            cursor.sort({ price: -1 })
+            filtersFind.sort({ price: -1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
@@ -185,16 +180,23 @@ function createRoutes(app, db) {
             });
             return;
         } else if (request.query.orderType == 'Popularity') {
-            cursor.sort({ popularity: -1 })
+            filtersFind.sort({ popularity: -1 })
             .toArray((err, result) => {
                 assert.equal(null, err);
                 
                 response.send(result);
             });
             return;
+        } else if (request.query.orderType == 'name'){
+            filtersFind.sort({ name: 1 })
+            .toArray((err, result) => {
+                assert.equal(null, err);
+                
+                response.send(result);
+            });
+            return; 
         } else {
-        
-            cursor
+            filtersFind
             .toArray((err, result) => {
 
                 assert.equal(null, err);
