@@ -92,14 +92,9 @@ function animate() {
 }    
             
 // Creamos una par de focos de luz
-var luz1 = new THREE.AmbientLight(0xffffff);; // Rojizo
-// luz1.position.set(
-//     120, // Posición en eje X
-//     260, // Posición en eje Y
-//     10	 // Posición en eje Z
-//     );
+var luz1 = new THREE.AmbientLight(0xffffff,0.3); // Ambiental
                 
-var luz2 = new THREE.PointLight(0xffffff); // Azulado
+var luz2 = new THREE.PointLight(0xffffff,0.8); // Azulado
 luz2.position.set(
     -100, // Posición en eje X
     100, // Posición en eje Y
