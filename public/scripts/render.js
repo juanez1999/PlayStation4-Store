@@ -43,7 +43,9 @@
             0.1,
             10000
         );
-        
+
+        var controls = new THREE.OrbitControls( camara, lienzo.domElement);
+
         var loader = new THREE.GLTFLoader();
 
             loader.load( '/recursos/render/scene.gltf', function ( gltf ) {
@@ -61,7 +63,6 @@
 
                 escena.add(camara);
 
-
             }, // called while loading is progressing
             function ( xhr ) {
         
@@ -74,17 +75,26 @@
 
             } );
         
-        // Generamos la cámara
-        
-        
-        // Añadimos la cámara a la escena
-        
+            camara.position.set( 0, 20, 100 );
+            controls.update();
+            
+            function animate() {
+            
+                requestAnimationFrame( animate );
+            
+                // required if controls.enableDamping or controls.autoRotate are set to true
+                controls.update();
+            
+                renderer.render( escena, camara );
+            
+            }    
+
         // Creamos una par de focos de luz
         var luz1 = new THREE.PointLight(0xff0044); // Rojizo
         luz1.position.set(
             120, // Posición en eje X
             260, // Posición en eje Y
-            100	 // Posición en eje Z
+            10	 // Posición en eje Z
         );
         
         var luz2 = new THREE.PointLight(0x4499ff); // Azulado
