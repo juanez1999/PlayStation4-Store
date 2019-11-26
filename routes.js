@@ -1,4 +1,5 @@
 const assert = require('assert');
+var three = require('three');
 const ObjectID = require('mongodb').ObjectID;
 
 function createRoutes(app, db) {
@@ -11,6 +12,11 @@ function createRoutes(app, db) {
     app.get('/tienda', (request, response) => {
         console.log('alguien entró a la ruta de tienda');
         response.render('store');
+    });
+
+    app.get('/previsualizacion', (request, response) => {
+        console.log('alguien entró a la ruta del render');
+        response.render('render');
     });
     
     app.get('/api/carItems', (request, response) => {
