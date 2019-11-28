@@ -24,17 +24,25 @@
 
                <div class="productDetail__imagesBigger">
                     <img class="productDetail__imagesBiggerSelect" src="/{{product.image}}" alt=""> 
+                    <h1 class="productDetail__Price">Precio: ${{product.price}}</h1>
+                    <div class="productDetail__Buttons">
+                         <button data-id="{{product._id}}" onclick="location.href='/previsualizacion'" class="productDetail__SeeRender">Previsualizar el producto</button>
+                         <button data-id="{{product._id}}" class="productDetail__AddToCart">Agregar al carrito</button>
+                    </div>     
                </div>
+
          </div>
 
          <div class="productDetail__features">
-              <h1 class="productDetail__featuresTitle">Caracteristicas</h1>
-              <h3 class="productDetail__featuresDescription">{{product.description}}</h3>
-              <h1 class="productDetail__featuresPrice">${{product.price}}</h1>
-              {{!-- data-id significa pasarle al javascript la información que yo quiera del handlebars --}}
-              <button data-id="{{product._id}}" class="productDetail__featuresAddToCart">Agregar al carrito</button>
-              <a class="productDetail__featuresRender" href="/previsualizacion">Previsualizar el producto</a>
-              <a class="productDetail__featuresMoreProducts" href="/tienda">Ver más productos</a>
+               <h1 class="productDetail__featuresTitle">Caracteristicas</h1>
+               <h3 class="productDetail__featuresDescription">{{product.description}}</h3>
+               <h1 class="productDetail__featuresPrice">${{product.price}}</h1>
+               <div class="productDetail__featuresButtons">
+                    <button data-id="{{product._id}}" class="productDetail__featuresAddToCart">Agregar al carrito</button>
+                    <button data-id="{{product._id}}" onclick="location.href='/previsualizacion'" class="productDetail__featuresSeeRender">Previsualizar el producto</button>
+               </div>
+               {{!-- data-id significa pasarle al javascript la información que yo quiera del handlebars --}}
+               <a class="productDetail__featuresMoreProducts" href="/tienda">Ver más productos</a>
          </div>
 
     </div>

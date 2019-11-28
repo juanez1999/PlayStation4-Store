@@ -84,12 +84,16 @@
     border-radius: 15px;    
     background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 180px;
+    width: 150px;
     height: 50px;
     color: white;
     font-size: 15px;
     margin-top: 20px;
 }
+.productDetail__featuresAddToCart:focus{
+    outline: none;
+}
+
 
 .productDetail__featuresMoreProducts{
     color: #FF665C;
@@ -98,4 +102,144 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: bold;
+}
+
+.productDetail__AddToCart{
+    display: none;
+    border: none;   
+    border-radius: 15px;    
+    background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 180px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.productDetail__AddToCart:focus{
+    outline: none;
+}
+.productDetail__featuresButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productDetail__featuresSeeRender{
+    display: block;
+    border: none;   
+    border-radius: 15px;    
+    background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.productDetail__SeeRender{
+    display: none;
+    border: none;   
+    border-radius: 15px;    
+    background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.productDetail__Price{
+    display: none;
+    margin: 0px;
+    color: rgb(250, 50, 35);
+}
+
+@media (max-width: 720px){
+    .productDetail__images {
+        width: 50%;
+    }
+    .productDetail__imagesBigger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productDetail__imagesBiggerSelect{
+        width: 400px;
+        margin-left: 0px;
+    }
+
+    .productDetails__imagesOptionsImage{
+        margin-left: 25px;
+        width: 110px;
+        height: 80px;
+    }
+    .productDetails__imagesOptionsImage img{
+        width: 110px;
+    }
+
+    .productDetail__SeeRender{
+        display: block;
+        margin-top: 10px;
+        width: 100px;
+        margin-right: 20px;
+        font-size: 12px;
+        height: 45px;
+    }
+
+    .productDetail__AddToCart{
+        display: block;
+        margin-top: 10px;
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .productDetails__imagesOptions{
+        margin-bottom: 20px;
+    }
+    .productDetail__featuresAddToCart{
+        display: none;
+    }
+    .productDetail__featuresSeeRender{
+        display: none;
+    }
+    .productDetail__Buttons{
+        display: flex;
+        flex-direction: row;
+        margin-left: 160px;
+    }
+    .productDetail__features{
+        margin-left: 30px;
+        width: 500px;
+    }
+    .productDetail__featuresTitle{
+        text-align: center;
+    }
+
+    .productDetail__featuresDescription{
+        width: 470px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .productDetail__Price{
+        display: block;
+        font-size: 20px;
+        margin-left: 220px;
+        margin-bottom: 0px;
+    }
+
+    .productDetail__featuresPrice{
+        display: none;
+    }
+
+    .productDetail__featuresMoreProducts{
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
