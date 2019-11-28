@@ -6,7 +6,7 @@ window.addEventListener('load', function(){
         .then(function(response) {
             return response.json();
         }).then(function(carList) {
-            console.log(carList);
+           // console.log(carList);
             cartCount.innerText = carList.products.length;
         });
 

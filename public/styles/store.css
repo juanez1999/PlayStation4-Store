@@ -201,3 +201,75 @@ h3{
     height: 4px;
     background-color: #E5E5E5;
 }
+
+@media (max-width: 720px){
+    .storeTop__title h1{
+        font-size: 25px;
+    }
+
+    .storeTop__title{
+        width: 40%;
+    }
+    .storeTop__order{
+        flex-direction: column;
+        width: 40%;
+        margin-right: 15px;
+    }
+    .storeTop__order h3{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .storeTop__order select{
+        margin-top: 10px;
+    }
+
+    .mainStore__productsImg{
+        width: 200px;
+    }
+
+    .mainStore__productsItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        width: 80%;      
+    }
+
+    .mainStore__productsItemBuy h3{
+        font-size: 20px;
+    }
+    .mainStore__productsItemBuy{
+       width: 280px;
+    }
+
+    .mainStore__addToCart{
+        width: 35px;
+        height: 35px;
+    }
+
+    .mainStore__productsItemBtnBuy h4{
+        font-size: 15px;
+    }
+
+    .mainStore__products{
+        margin-right: 0px;
+        margin-top: 0px;
+        width: 50%;
+    }
+
+    .mainStore__filters{
+        width: 25%;
+    }
+    .filter__inputCheckbox{
+        margin-left: 10px;
+    }
+
+    .mainStore__filtersTitleBig{
+        font-size: 20px;
+    }
+
+    .mainStore__filtersTitle{
+        font-size: 16px;
+    }
+
+}

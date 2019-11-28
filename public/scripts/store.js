@@ -47,8 +47,10 @@ window.addEventListener('load', function(){
 
                     
 
-                    var data= new URLSearchParams();
+                    var data = new URLSearchParams();
                     data.append("idProduct",element._id);
+                    console.log("este es la wea:"+data);
+
 
                     var promise= fetch('/api/carItems', {
                         method : 'POST', 
