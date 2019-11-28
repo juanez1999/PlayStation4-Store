@@ -118,3 +118,16 @@
     font-size: 15px;
     margin: 20px 0px;
 }
+@media (max-width: 720px){
+    .carItem__important{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+        align-items: center;
+    }
+
+    .carItem__important h1{
+        margin-bottom: 0px;
+        margin-right: 120px;
+    }
+}

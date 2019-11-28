@@ -213,15 +213,6 @@ function createRoutes(app, db) {
             });
         
         }
-        
-        // products.find({})
-        // //transformamos el cursor a una arreglo
-        // .toArray((err, result) => {
-        //     //aseguramos de que no hay error
-        //     assert.equal(null, err);
-            
-        //     response.send(result);
-        // });
     });
     
     app.get('/compra', (request, response) => {

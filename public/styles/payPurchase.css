@@ -92,3 +92,23 @@
 .sendInfoTextSuccess{
     display: none;
 }
+
+@media (max-width: 720px){
+
+    .paymentForm{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paymentForm input[type=text] {
+        width: 450px;
+    }
+    .paymentForm input[type=number]{
+        width: 450px;
+    }
+
+    .formBox__select{
+        width: 450px;   
+    }
+
+}
