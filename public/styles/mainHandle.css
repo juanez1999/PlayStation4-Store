@@ -35,3 +35,23 @@
     margin: 0px;
     width: 100%;
 }
+
+@media (max-width: 720px){
+    .navGlobal{
+        height: 60px;
+        width: 100%;
+    }
+
+    .navGlobal__logo img{
+        width: 65px;
+    }
+
+    .navGlobal__shop img {
+        width: 40px;
+    }
+
+    .navGlobal__shopCartCount{
+        width: 20px;
+        height: 20px;
+    }
+}
