@@ -134,11 +134,19 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 350px;
+  margin-left: 35px;
 }
 
 .mainStore__productsImg {
   width: 350px;
   height: auto;
+  transition: width .4s ease-out;
+}
+
+.mainStore__productsImg:hover{
+  width: 410px;
+  height: auto;
+  transition: width .4s ease-out;
 }
 
 .mainStore__addToCart {
@@ -325,6 +333,7 @@ h3 {
   .mainStore__productsImg {
     width: 200px;
   }
+
   .mainStore__productsItem {
     display: -webkit-box;
     display: -ms-flexbox;
