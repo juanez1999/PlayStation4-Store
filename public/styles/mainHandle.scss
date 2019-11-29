@@ -1,0 +1,58 @@
+$color_1: white;
+$font_family_1: 'Raleway';
+$background_color_1: white;
+$background_color_2: black;
+
+.navGlobal {
+	position: fixed;
+	z-index: 100000;
+	background-color: $background_color_1;
+	-webkit-box-shadow: 0px -10px 10px 10px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px -10px 10px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px -10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.bodyGlobal {
+	padding-top: 120px;
+}
+.navGlobal__shop {
+	display: flex;
+	flex-direction: row;
+}
+.navGlobal__shopCartCount {
+	display: flex;
+	background-color: $background_color_2;
+	width: 25px;
+	height: 25px;
+	color: $color_1;
+	border-radius: 20px;
+	margin-left: -15px;
+	text-align: center;
+	p {
+		font-family: $font_family_1;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 17px;
+		margin: 0px;
+		width: 100%;
+	}
+}
+@media (max-width: 720px) {
+	.navGlobal {
+		height: 10%;
+		width: 100%;
+	}
+	.navGlobal__logo {
+		img {
+			width: 65px;
+		}
+	}
+	.navGlobal__shop {
+		img {
+			width: 40px;
+		}
+	}
+	.navGlobal__shopCartCount {
+		width: 20px;
+		height: 20px;
+	}
+}

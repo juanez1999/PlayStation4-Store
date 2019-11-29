@@ -1,114 +1,139 @@
-.payment{
-    display: flex;
-    flex-direction: column;
+.payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.paymentTitle{
-    border-left: 6px  solid #FF5247;
-    margin-left: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+.paymentTitle {
+  border-left: 6px solid #FF5247;
+  margin-left: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
 }
 
-.paymentTitle h1{
-    font-size: 40px;
+.paymentTitle h1 {
+  font-size: 40px;
 }
 
-.paymentForm{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    justify-content: space-between;
+.paymentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.formBox{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+.paymentForm label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  border-bottom: 2px solid #BDBEC2;
+  padding-bottom: 10px;
 }
 
-.paymentForm label{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: bold;
-    border-bottom: 2px solid #BDBEC2;
-    padding-bottom: 10px;
+.paymentForm input[type=text] {
+  border-radius: 12px;
+  width: 600px;
+  background: #E6E6E8;
+  border-style: none;
+  height: 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.paymentForm input[type=text]{
-    border-radius: 12px;
-    width: 600px;
-    background: #E6E6E8;
-    border-style: none;
-    height: 30px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 500;
-
+.paymentForm input[type=number] {
+  border-radius: 12px;
+  width: 600px;
+  background: #E6E6E8;
+  border-style: none;
+  height: 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.paymentForm input[type=number]{
-    border-radius: 12px;
-    width: 600px;
-    background: #E6E6E8;
-    border-style: none;
-    height: 30px; 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 500;
+.formBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
 }
 
-.formBox__select{
-    width: 600px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 500;
+.formBox__select {
+  width: 600px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.sendInfo{
-    border: none;   
-    border-radius: 15px;    
-    background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 180px;
-    height: 50px;
-    color: white;
-    font-size: 15px;
-    margin: 60px 0px;
+.sendInfo {
+  border: none;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 94, 84, 0)), color-stop(0.01%, #FF7F77), color-stop(23.11%, #FF665C), to(#FF190B));
+  background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 180px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  margin: 60px 0px;
 }
 
-.sendInfo:focus{
-    outline: none;
+.sendInfo:focus {
+  outline: none;
 }
 
-.sendInfoTextSuccess{
-    display: none;
+.sendInfoTextSuccess {
+  display: none;
 }
 
-@media (max-width: 720px){
-
-    .paymentForm{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .paymentForm input[type=text] {
-        width: 450px;
-    }
-    .paymentForm input[type=number]{
-        width: 450px;
-    }
-
-    .formBox__select{
-        width: 450px;   
-    }
-
+@media (max-width: 720px) {
+  .paymentForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .paymentForm input[type=text] {
+    width: 450px;
+  }
+  .paymentForm input[type=number] {
+    width: 450px;
+  }
+  .formBox__select {
+    width: 450px;
+  }
 }
+/*# sourceMappingURL=payPurchase.css.map */

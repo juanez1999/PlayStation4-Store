@@ -159,16 +159,11 @@ function createRoutes(app, db) {
             filters.color = color;
         }
 
-        console.log(filters.color);
-
-
         if(Array.isArray(type)) {
             filters.type = { $in: type };
         } else if(type != undefined) {
             filters.type = type;
         }
-        console.log(filters.type);
-
 
         if(request.query.price != undefined) {
             filters.price = { $lte: parseInt(request.query.price) };

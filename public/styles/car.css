@@ -1,133 +1,173 @@
-.carTitle{
-    border-left: 6px  solid #FF5247;
-    margin-left: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+.carTitle {
+  border-left: 6px solid #FF5247;
+  margin-left: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
 }
 
-.carTitle h1{
-    font-size: 40px;
+.carTitle h1 {
+  font-size: 40px;
 }
 
-.carItem{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    justify-content: space-between;
+.carItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.carItem__description{
-    display: flex;
-    flex-direction: row;
+.carItem__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.carItem__descriptionImg img{
-    width: 200px;
-    height: auto;
+.carItem__descriptionImg img {
+  width: 200px;
+  height: auto;
 }
 
-.carItem__descriptionInfo{
-    margin-left: 20px;
-    font-family: 'Raleway';
-    font-style: normal;
+.carItem__descriptionInfo {
+  margin-left: 20px;
+  font-family: "Raleway";
+  font-style: normal;
 }
 
-.carItem__descriptionInfo h1{
-    font-size: 25px;
+.carItem__descriptionInfo h1 {
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.carItem__descriptionInfo h2 {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.carItem__descriptionInfo h3 {
+  color: #FF5247;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.carItem__descriptionInfo a {
+  color: black;
+  font-size: 12px;
+  padding: 5px;
+  margin-left: -5px;
+}
+
+.carItem__descriptionInfoSave {
+  border-right: 1.5px solid gray;
+}
+
+.carItem__important {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Raleway";
+  font-style: normal;
+}
+
+.carItem__important h2 {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.carItem__important h3 {
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.carItem__important h1 {
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+.carItem__importantDelete {
+  width: 40px;
+  margin: 10px 0px;
+}
+
+.carToPay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.carToPay__btn {
+  border: none;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 94, 84, 0)), color-stop(0.01%, #FF7F77), color-stop(23.11%, #FF665C), to(#FF190B));
+  background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 180px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  margin: 20px 0px;
+}
+
+@media (max-width: 720px) {
+  .carItem__important {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carItem__important h1 {
     margin-bottom: 0px;
-    margin-top: 5px;
+    margin-right: 120px;
+  }
 }
-
-.carItem__descriptionInfo h2{
-    font-size: 15px;
-    margin-top: 8px;
-    margin-bottom: 0px;
-}
-
-.carItem__descriptionInfo h3{
-    color: #FF5247;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 6px;
-}
-
-.carItem__descriptionInfo a{
-    color: black;
-    font-size: 12px;
-    padding: 5px;
-    margin-left: -5px;
-}
-
-.carItem__descriptionInfoSave{
-    border-right: 1.5px solid gray;
-}
-
-.carItem__important{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-family: 'Raleway';
-    font-style: normal;
-}
-
-.carItem__important h2{
-    margin-bottom: 0px;
-    margin-top: 5px;
-}
-
-.carItem__important h3{
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-
-.carItem__important h1{
-    margin-top: 0px;
-    font-size: 25px;
-}
-
-.carItem__importantDelete{
-    width: 40px;
-    margin: 10px 0px;
-}
-
-.carToPay{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 50px;
-}
-
-.carToPay__btn{
-    border: none;   
-    border-radius: 15px;    
-    background: linear-gradient(180deg, rgba(252, 94, 84, 0) 0%, #FF7F77 0.01%, #FF665C 23.11%, #FF190B 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 180px;
-    height: 50px;
-    color: white;
-    font-size: 15px;
-    margin: 20px 0px;
-}
-@media (max-width: 720px){
-    .carItem__important{
-        flex-direction: row;
-        justify-content: space-between;
-        width: 500px;
-        align-items: center;
-    }
-
-    .carItem__important h1{
-        margin-bottom: 0px;
-        margin-right: 120px;
-    }
-}
+/*# sourceMappingURL=car.css.map */
