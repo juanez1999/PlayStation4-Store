@@ -95,7 +95,7 @@ h3{
 
 .mainStore__products h3{
     margin-top: -1px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .mainStore__addToCart{
@@ -236,7 +236,11 @@ h3{
     }
 
     .mainStore__productsItemBuy h3{
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .mainStore__productsPopularity h3{
+        margin-top:  5px;
     }
     .mainStore__productsItemBuy{
        width: 280px;

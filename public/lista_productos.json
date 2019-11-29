@@ -65,5 +65,261 @@
                     ],
     "image": "recursos/control3.png",
     "popularity": 3
+  },
+  {
+    "name": "Control PS4 Negro",
+    "price": 109.999,
+    "color": "black",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerBlack.png",
+    "popularity": 4
+  },
+  {
+    "name": "Control PS4 Negro Army",
+    "price": 109.999,
+    "color": "black",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerBlackArmy.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Negro Oro",
+    "price": 109.999,
+    "color": "black",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerBlackGold.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Azul Army",
+    "price": 109.999,
+    "color": "blue",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerBlueArmy.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Azul",
+    "price": 109.999,
+    "color": "blue",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerBlue.png",
+    "popularity": 3
+  },
+  {
+    "name": "Control PS4 Verde Especial",
+    "price": 219.999,
+    "color": "green",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerGreen.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Verde Army",
+    "price": 169.999,
+    "color": "green",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerGreenArmy.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Blanco Dollar",
+    "price": 219.999,
+    "color": "white",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerWhiteDollar.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Blanco Skyrim",
+    "price": 259.999,
+    "color": "white",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerWhiteSkyrim.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control PS4 Rosa Army",
+    "price": 259.999,
+    "color": "pink",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/controllerPinkArmy.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control Move Azul",
+    "price": 119.999,
+    "color": "blue",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/moveControllerBlue.png",
+    "popularity": 3
+  },
+  {
+    "name": "Control Move Rosa",
+    "price": 119.999,
+    "color": "pink",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/moveControllerPink.png",
+    "popularity": 3
+  },
+  {
+    "name": "VR PlayStation4",
+    "price": 399.999,
+    "color": "white",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/PS4Vr.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control Move Blanco",
+    "price": 119.999,
+    "color": "white",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/moveControllerWhite.png",
+    "popularity": 3
+  },
+  {
+    "name": "Control Move DUO",
+    "price": 119.999,
+    "color": "blue",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/ControllerMove.png",
+    "popularity": 5
+  },
+  {
+    "name": "Control Move Rojo",
+    "price": 119.999,
+    "color": "pink",
+    "description": [
+                    "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
+                    "- Sensor de movimiento",
+                    "- Altavoz mono incorporado, barra de luz",
+                    "- Puertos -USB (micro B), puerto de ampliación, toma de auricular estéreo",
+                    "- Comunicación inalámbrica - Bluetooth® Ver2.1+EDR",
+                    "- Recargable - Capacidad 1000 mAh",
+                    "- Plataformas de juego soportadas: PlayStation 4"
+                    ],
+    "image": "recursos/moveControllerRed.png",
+    "popularity": 3
   }
 ]

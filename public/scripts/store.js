@@ -17,12 +17,6 @@ window.addEventListener('load', function(){
         tl.restart();
     }
 
-    //cartLogo.addEventListener('mouseenter',playAnimation);
-    // cartLogo.addEventListener('mouseleave',rewindAnimation);
-
-
-    //console.log(orderList);
-
     function displayList(order) {
         fetch('/api/products'+order)
         .then(function(response) {
