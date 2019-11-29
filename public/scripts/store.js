@@ -2,6 +2,18 @@ window.addEventListener('load', function(){
     
     var orderList = document.querySelector(".orderType");
     var checkBoxes = document.querySelectorAll('.filter__inputCheckbox');
+    var checkBoxesType = document.querySelectorAll('.filter__inputCheckboxType');
+    console.log(checkBoxesType);
+
+
+    var filter = document.querySelector('.mainStore__filters');
+    var range = document.querySelector(".filter__range");
+
+    var displayValue = document.createElement('p');
+    displayValue.classList.add('filter__rangeValue')
+
+    displayValue.innerHTML = '$'+range.value;
+    filter.appendChild(displayValue);
 
     var tl = gsap.timeline({});
     tl.to(".navGlobal__shop",{scale: .6 , duration: 0.3,});
@@ -69,7 +81,7 @@ window.addEventListener('load', function(){
                 });
     
             });
-            console.log(listItems);
+           // console.log(listItems);
         });
     }
     
@@ -92,6 +104,14 @@ window.addEventListener('load', function(){
             }
         });
 
+        checkBoxesType.forEach((checkBoxType) => {
+            if(checkBoxType.checked) {
+                order = order.concat('&type='+checkBoxType.value);
+            }
+        });
+
+        order = order.concat('&price='+range.value);
+
         console.log("este es el order:"+order);
         displayList(order);
     };
@@ -99,5 +119,16 @@ window.addEventListener('load', function(){
     checkBoxes.forEach((checkBox) => {
         checkBox.addEventListener('change', handleChange);
     });
+
+    checkBoxesType.forEach((checkBoxType) => {
+        checkBoxType.addEventListener('change', handleChange);
+    });
+    
+    range.addEventListener('input', () => {
+        displayValue.innerHTML = '$'+range.value;
+        filter.appendChild(displayValue);
+    });
+
+    range.addEventListener('change', handleChange);
 
 });

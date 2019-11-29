@@ -122,6 +122,15 @@ h3{
     font-weight: 300;
 }
 
+.filter__rangeValue{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+
 .mainStore__productsItemBtnBuy h4{
     width: 70px;
     margin-top: 2px;
@@ -177,6 +186,40 @@ h3{
     font-weight: 500;
     font-size: 15px;
 }
+
+.mainStore__filtersCheckboxType {
+    margin: 5px 0;
+    position: relative;
+    width: 100%;
+}
+
+.mainStore__filtersCheckboxType input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #FFF;
+    border: 2px solid black;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+}
+
+.mainStore__filtersCheckboxType input:checked {
+    background-color:  #FF665C;
+}
+
+.mainStore__filtersCheckboxType label{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
 
 .filter__range {
     -webkit-appearance: none;
@@ -264,6 +307,7 @@ h3{
     .mainStore__filters{
         width: 25%;
     }
+    
     .filter__inputCheckbox{
         margin-left: 10px;
     }
@@ -274,6 +318,15 @@ h3{
 
     .mainStore__filtersTitle{
         font-size: 16px;
+    }
+
+    .filter__rangeValue{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 0px;
+        text-align: center;
     }
 
 }

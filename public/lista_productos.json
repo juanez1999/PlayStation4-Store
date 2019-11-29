@@ -1,8 +1,9 @@
 [
   {
     "name": "Control PS4 Blanco",
-    "price": 149.999,
+    "price": 149999,
     "color": "white",
+    "type": "joystick",
     "description": [
 
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
@@ -20,8 +21,9 @@
   },
   {
     "name": "Control PS4 Verde",
-    "price": 149.999,
+    "price": 149999,
     "color": "green",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -36,8 +38,9 @@
   },
   {
     "name": "Control PS4 Rosado",
-    "price": 129.999,
+    "price": 129999,
     "color": "pink",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -52,8 +55,9 @@
   },
   {
     "name": "Control PS4 Azul",
-    "price": 109.999,
+    "price": 109999,
     "color": "blue",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -68,8 +72,9 @@
   },
   {
     "name": "Control PS4 Negro",
-    "price": 109.999,
+    "price": 109999,
     "color": "black",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -84,8 +89,9 @@
   },
   {
     "name": "Control PS4 Negro Army",
-    "price": 109.999,
+    "price": 109999,
     "color": "black",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -100,8 +106,9 @@
   },
   {
     "name": "Control PS4 Negro Oro",
-    "price": 109.999,
+    "price": 109999,
     "color": "black",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -116,8 +123,9 @@
   },
   {
     "name": "Control PS4 Azul Army",
-    "price": 109.999,
+    "price": 109999,
     "color": "blue",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -132,8 +140,9 @@
   },
   {
     "name": "Control PS4 Azul",
-    "price": 109.999,
+    "price": 109999,
     "color": "blue",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -148,8 +157,9 @@
   },
   {
     "name": "Control PS4 Verde Especial",
-    "price": 219.999,
+    "price": 219999,
     "color": "green",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -164,8 +174,9 @@
   },
   {
     "name": "Control PS4 Verde Army",
-    "price": 169.999,
+    "price": 169999,
     "color": "green",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -180,8 +191,9 @@
   },
   {
     "name": "Control PS4 Blanco Dollar",
-    "price": 219.999,
+    "price": 219999,
     "color": "white",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -196,8 +208,9 @@
   },
   {
     "name": "Control PS4 Blanco Skyrim",
-    "price": 259.999,
+    "price": 259999,
     "color": "white",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -212,8 +225,9 @@
   },
   {
     "name": "Control PS4 Rosa Army",
-    "price": 259.999,
+    "price": 259999,
     "color": "pink",
+    "type": "joystick",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -228,8 +242,9 @@
   },
   {
     "name": "Control Move Azul",
-    "price": 119.999,
+    "price": 119999,
     "color": "blue",
+    "type": "move",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -244,8 +259,9 @@
   },
   {
     "name": "Control Move Rosa",
-    "price": 119.999,
+    "price": 119999,
     "color": "pink",
+    "type": "move",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -260,8 +276,9 @@
   },
   {
     "name": "VR PlayStation4",
-    "price": 399.999,
+    "price": 399999,
     "color": "white",
+    "type": "vr",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -276,8 +293,9 @@
   },
   {
     "name": "Control Move Blanco",
-    "price": 119.999,
+    "price": 119999,
     "color": "white",
+    "type": "move",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -292,8 +310,9 @@
   },
   {
     "name": "Control Move DUO",
-    "price": 119.999,
+    "price": 119999,
     "color": "blue",
+    "type": "move",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",
@@ -308,8 +327,9 @@
   },
   {
     "name": "Control Move Rojo",
-    "price": 119.999,
+    "price": 119999,
     "color": "pink",
+    "type": "move",
     "description": [
                     "Touch Pad - Almohadilla táctil de 2 puntos, mecanismo pulsar, tipo capacitivo",
                     "- Sensor de movimiento",

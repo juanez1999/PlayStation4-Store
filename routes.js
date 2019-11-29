@@ -148,7 +148,9 @@ function createRoutes(app, db) {
     app.get('/api/products', (request, response) => {
         const products = db.collection('products');
         var color = request.query.color;
-        
+
+        var type = request.query.type;
+
         var filters = {};
 
         if(Array.isArray(color)) {
@@ -157,9 +159,23 @@ function createRoutes(app, db) {
             filters.color = color;
         }
 
+        console.log(filters.color);
+
+
+        if(Array.isArray(type)) {
+            filters.type = { $in: type };
+        } else if(type != undefined) {
+            filters.type = type;
+        }
+        console.log(filters.type);
+
+
+        if(request.query.price != undefined) {
+            filters.price = { $lte: parseInt(request.query.price) };
+        }
+
         var filtersFind = products.find(filters);
 
-        
         if (request.query.orderType == 'priceAscending') {
             filtersFind.sort({ price: 1 })
             .toArray((err, result) => {
