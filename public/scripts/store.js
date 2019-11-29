@@ -3,7 +3,6 @@ window.addEventListener('load', function(){
     var orderList = document.querySelector(".orderType");
     var checkBoxes = document.querySelectorAll('.filter__inputCheckbox');
     var checkBoxesType = document.querySelectorAll('.filter__inputCheckboxType');
-    console.log(checkBoxesType);
 
 
     var filter = document.querySelector('.mainStore__filters');
@@ -49,14 +48,12 @@ window.addEventListener('load', function(){
                 var addToCart = product.querySelector(".mainStore__addToCart");
 
                 addToCart.addEventListener("click",function() {
-                    console.log("sirve el boton",element);
+                   // console.log("sirve el boton",element);
 
                     
 
                     var data = new URLSearchParams();
                     data.append("idProduct",element._id);
-                    console.log("este es la wea:"+data);
-
 
                     var promise= fetch('/api/carItems', {
                         method : 'POST', 

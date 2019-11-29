@@ -295,9 +295,14 @@ h3 {
   background-color: #E5E5E5;
 }
 
+.filter__range:focus{
+  outline: none;
+}
+
 @media (max-width: 720px) {
   .storeTop__title {
     width: 40%;
+    margin-left: 25px;
   }
   .storeTop__title h1 {
     font-size: 25px;
@@ -334,7 +339,7 @@ h3 {
     width: 80%;
   }
   .mainStore__productsItemBuy {
-    width: 280px;
+    width: 235px;
   }
   .mainStore__productsItemBuy h3 {
     font-size: 16px;
@@ -356,6 +361,7 @@ h3 {
   }
   .mainStore__filters {
     width: 25%;
+    margin-left: 25px;
   }
   .filter__inputCheckbox {
     margin-left: 10px;
