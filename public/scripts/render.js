@@ -12,28 +12,13 @@ lienzo.setSize(
 );
     
 lienzo.setClearColor (0xffffff, 1);
-    
+
+
 // Añadimos el lienzo a la página
 document.body.appendChild(lienzo.domElement);
     
 // Creamos la escena
 var escena = new THREE.Scene;
-
-
-// Creamos un poligono
-var geometriaCubo = new THREE.CubeGeometry(
-100, // Dimensiones en eje X
-140, // Dimensiones en eje Y
-100 // Dimensiones en eje Z
-);
-
-// Creamos una apariencia (de lila claro)
-var aparienciaLila = new THREE.MeshLambertMaterial({
-color: 0x9999FF // Color hexadecimal
-});
-
-// Generamos el polígino y le aplicamos la apariencia
-// var cubo = new THREE.Mesh(geometriaCubo, aparienciaLila);
 
 // Añadimos el cubo a la escena
 //escena.add(cubo);
@@ -47,6 +32,13 @@ var camara = new THREE.PerspectiveCamera(
 );
 
 var controls = new THREE.OrbitControls( camara, lienzo.domElement);
+
+const loader2 = new THREE.TextureLoader();
+loader2.load('/recursos/fondoPS4.jpg' , function(texture)
+            {
+             escena.background = texture;  
+            });
+    
 
 var loader = new THREE.GLTFLoader();
 

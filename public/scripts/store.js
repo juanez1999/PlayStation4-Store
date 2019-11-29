@@ -49,20 +49,6 @@ window.addEventListener('load', function(){
                 container.appendChild(product);
 
                 var addToCart = product.querySelector(".mainStore__addToCart");
-                var productImg = product.querySelector(".mainStore__productsImg");
-
-                var tl2 = gsap.timeline({});
-                tl2.to(".mainStore__productsImg",{scale: .6 , duration: 0.3,});
-                tl2.to(".mainStore__productsImg",{scale: 1 , duration: 0.5, ease: "bounce"}, "-=.1");
-                tl2.pause();
-
-                function playAnimation2(){
-                    tl2.play();
-                }
-
-                function rewindAnimation2(){
-                    tl2.restart();
-                }
 
                 addToCart.addEventListener("click",function() {
                    // console.log("sirve el boton",element);

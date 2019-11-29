@@ -17,10 +17,22 @@ window.addEventListener('load', function(){
         tl.restart();
     }
     
+    var tl2 = gsap.timeline({});
+    tl2.to(".productDetail__featuresAddToCart", {scaleX: .3 , duration: 0.3,});
+    tl2.to(".productDetail__featuresAddToCart", {scaleX: 1 , duration: 0.4, ease: "bounce"}, "-=.1");
+    tl2.pause();
+
+    function playAnimation2(){
+        tl2.play();
+    }
+    
+    function rewindAnimation2(){
+        tl2.restart();
+    }
     
     addToCart.addEventListener("click",function() {
-        console.log("sirve el boton");
-        console.log(addToCart.getAttribute("data-id"));
+        //console.log("sirve el boton");
+        //console.log(addToCart.getAttribute("data-id"));
         
         var data= new URLSearchParams();
         data.append("idProduct",addToCart.getAttribute("data-id"));
@@ -36,6 +48,8 @@ window.addEventListener('load', function(){
             displayCar();
         });
     });
+
+   
 
     addToCart2.addEventListener("click",function() {
         console.log("sirve el boton");
@@ -70,6 +84,14 @@ window.addEventListener('load', function(){
     
     addToCart2.addEventListener("mouseup",function() {
         rewindAnimation();
+    });
+
+    addToCart.addEventListener("mousedown",function(){
+        playAnimation2();
+    });
+
+    addToCart.addEventListener("mouseup",function(){
+        rewindAnimation2();
     });
     
     

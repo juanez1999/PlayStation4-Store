@@ -144,7 +144,7 @@ h3 {
 }
 
 .mainStore__productsImg:hover{
-  width: 410px;
+  width: 400px;
   height: auto;
   transition: width .4s ease-out;
 }
